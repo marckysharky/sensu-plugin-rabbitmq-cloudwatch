@@ -7,7 +7,6 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'sensu-plugin/cli'
 require 'carrot-top'
 require 'aws-sdk'
-require 'pp'
 
 require 'sensu/plugin/rabbitmq/cloudwatch/counts'
 require 'sensu/plugin/rabbitmq/cloudwatch/queues'
