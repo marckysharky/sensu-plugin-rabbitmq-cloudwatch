@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = "sensu-plugin-rabbitmq-cloudwatch"
   spec.version       = Sensu::Plugin::Rabbitmq::Cloudwatch::VERSION
   spec.authors       = ["Marc Watts"]
-  spec.email         = ["marcky.sharky@googlemail.com"]
+  spec.email         = ["marcky.sharky@gmail.com"]
 
   spec.summary       = %q{Sensu Plugin for RabbitMQ metrics Cloudwatch}
   spec.description   = %q{Send RabbitMQ metrics to Cloudwatch}
