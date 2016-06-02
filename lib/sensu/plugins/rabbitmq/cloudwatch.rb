@@ -1,7 +1,7 @@
-require "sensu/plugin/rabbitmq/cloudwatch/version"
+require "sensu/plugins/rabbitmq/cloudwatch/version"
 
 module Sensu
-  module Plugin
+  module Plugins
     module Rabbitmq
       module Cloudwatch
         # Your code goes here...

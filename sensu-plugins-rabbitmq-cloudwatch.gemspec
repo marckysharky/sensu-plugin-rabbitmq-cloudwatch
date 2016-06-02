@@ -1,17 +1,17 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'sensu/plugin/rabbitmq/cloudwatch/version'
+require 'sensu/plugins/rabbitmq/cloudwatch/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "sensu-plugin-rabbitmq-cloudwatch"
-  spec.version       = Sensu::Plugin::Rabbitmq::Cloudwatch::VERSION
+  spec.name          = "sensu-plugins-rabbitmq-cloudwatch"
+  spec.version       = Sensu::Plugins::Rabbitmq::Cloudwatch::VERSION
   spec.authors       = ["Marc Watts"]
   spec.email         = ["marcky.sharky@gmail.com"]
 
-  spec.summary       = %q{Sensu Plugin for RabbitMQ metrics Cloudwatch}
+  spec.summary       = %q{Sensu Plugins for RabbitMQ metrics Cloudwatch}
   spec.description   = %q{Send RabbitMQ metrics to Cloudwatch}
-  spec.homepage      = "https://github.com/marckysharky/sensu-plugin-rabbitmq-cloudwatch"
+  spec.homepage      = "https://github.com/marckysharky/sensu-plugins-rabbitmq-cloudwatch"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
   # delete this section to allow pushing this gem to any host.

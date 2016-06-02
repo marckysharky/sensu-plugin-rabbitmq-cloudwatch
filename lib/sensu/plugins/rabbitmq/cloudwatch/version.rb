@@ -1,5 +1,5 @@
 module Sensu
-  module Plugin
+  module Plugins
     module Rabbitmq
       module Cloudwatch
         VERSION = "0.1.0"

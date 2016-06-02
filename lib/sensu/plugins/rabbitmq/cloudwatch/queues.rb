@@ -1,5 +1,5 @@
 module Sensu
-  module Plugin
+  module Plugins
     module Rabbitmq
       module Cloudwatch
         class Queues

@@ -8,8 +8,8 @@ require 'sensu-plugin/cli'
 require 'carrot-top'
 require 'aws-sdk'
 
-require 'sensu/plugin/rabbitmq/cloudwatch/counts'
-require 'sensu/plugin/rabbitmq/cloudwatch/queues'
+require 'sensu/plugins/rabbitmq/cloudwatch/counts'
+require 'sensu/plugins/rabbitmq/cloudwatch/queues'
 
 class MetricsRabbitMQ < Sensu::Plugin::CLI
 
@@ -80,11 +80,11 @@ class MetricsRabbitMQ < Sensu::Plugin::CLI
   end
 
   def counts
-    Sensu::Plugin::Rabbitmq::Cloudwatch::Counts.call(rabbitmq: rabbitmq)
+    Sensu::Plugins::Rabbitmq::Cloudwatch::Counts.call(rabbitmq: rabbitmq)
   end
 
   def queues
-    Sensu::Plugin::Rabbitmq::Cloudwatch::Queues.call(rabbitmq: rabbitmq)
+    Sensu::Plugins::Rabbitmq::Cloudwatch::Queues.call(rabbitmq: rabbitmq)
   end
 
   def dimensions
