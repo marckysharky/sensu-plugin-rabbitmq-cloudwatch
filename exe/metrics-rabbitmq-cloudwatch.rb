@@ -72,11 +72,11 @@ class MetricsRabbitMQ < Sensu::Plugin::CLI
       cloudwatch.put_metric_data(namespace: config[:namespace], metric_data: m)
     end
 
-    ok
+    ok('ok')
   rescue => e
     STDOUT.puts e.message
     STDOUT.puts e.backtrace
-    exit(2)
+    warning(e.message)
   end
 
   def counts
